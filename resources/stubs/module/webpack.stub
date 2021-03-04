@@ -1,0 +1,10 @@
+const mix = require('laravel-mix');
+
+mix.setPublicPath('./Resources/assets');
+
+mix.js('Resources/js/app.js', 'demo.js')
+    .postCss('Resources/css/app.css', 'demo.css');
+
+if (mix.inProduction()) {
+    mix.version();
+}

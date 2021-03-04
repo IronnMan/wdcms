@@ -1,0 +1,84 @@
+{
+    "name": "wdcms/wdcms",
+    "type": "project",
+    "description": "The Last PHP Framework.",
+    "keywords": [
+        "framework",
+        "laravel",
+        "wdcms"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "fideloper/proxy": "^4.4",
+        "fruitcake/laravel-cors": "^2.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "jaeger/querylist": "dev-master",
+        "joshbrw/laravel-module-installer": "^1.0",
+        "laravel/framework": "^8.12",
+        "laravel/sanctum": "^2.8",
+        "livewire/livewire": "^2.3",
+        "lorisleiva/laravel-actions": "^2.0",
+        "nwidart/laravel-modules": "^8.2",
+        "pimple/pimple": "^3.2",
+        "predis/predis": "^1.1",
+        "spatie/laravel-permission": "^3.18",
+        "stancl/tenancy": "^3.4",
+        "xbhub/laravel-filter": "dev-master"
+    },
+    "require-dev": {
+        "laravel/tinker": "^2.5",
+        "facade/ignition": "^2.5",
+        "fakerphp/faker": "^1.9.1",
+        "laravel/sail": "^0.0.5",
+        "laravel/telescope": "^4.4",
+        "mockery/mockery": "^1.4.2",
+        "nunomaduro/collision": "dev-stable",
+        "phpunit/phpunit": "^9.3.3",
+        "xbhub/laravel-xgee": "dev-master"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "module-dir": "modules",
+        "laravel": {
+            "dont-discover": [
+                "laravel/telescope"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Modules\\": "modules/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        },
+        "files": []
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ],
+        "install": [
+            "@php artisan wdcms:install core"
+        ]
+    }
+}

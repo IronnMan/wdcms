@@ -1,0 +1,29 @@
+{
+    "name": "$VENDOR$/$LOWER_NAME$-module",
+    "type": "laravel-module",
+    "description": "$VENDOR$ $LOWER_NAME$-module",
+    "keywords": ["$VENDOR$","laravel","$LOWER_NAME$-module"],
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "$AUTHOR_NAME$",
+            "email": "$AUTHOR_EMAIL$"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "$MODULE_NAMESPACE$\\$STUDLY_NAME$\\": ""
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "domain": "Domainssss, 喜年华",
+    "datatable_title": "数据列表",
+    "datatable_select_multiple": "请选择一条数据",
+    "datatable_delete_tip": "确认删除吗",
+    "datatable_delete_success": "删除成功",
+    "create": "创建",
+    "update": "更新",
+    "delete": "删除",
+    "submit": "提交",
+    "reset": "取消",
+    "save": "保存",
+
+    "title": "标题",
+    "market_price": "市场价",
+    "discount_price": "折扣价",
+
+    "updated_at": "更新时间",
+    "photos": "图片",
+    "dashboard": "控制台",
+    "modules": "插件管理",
+    "tenants": "租户管理",
+    "sign out": "退出",
+    "sign in": "登陆",
+    "email": "邮箱",
+    "password": "密码",
+    "remember": "记住我",
+    "no permission to enter": "模块没有权限",
+    "forget your password": "忘记密码",
+    "cancel": "取消"
+}

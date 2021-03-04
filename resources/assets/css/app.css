@@ -1,0 +1,34 @@
+@tailwind base;
+
+body, html {
+    font-family: Chinese Quote, -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+:root {
+    --wd-blue: #206bc4;
+    --wd-azure: #4299e1;
+    --wd-indigo: #4263eb;
+    --wd-purple: #ae3ec9;
+    --wd-pink: #d6336c;
+    --wd-red: #d63939;
+    --wd-orange: #f76707;
+    --wd-yellow: #f59f00;
+    --wd-lime: #74b816;
+    --wd-green: #2fb344;
+    --wd-teal: #0ca678;
+    --wd-cyan: #17a2b8;
+    --wd-primary: #206bc4;
+    --wd-secondary: #656d77;
+    --wd-success: #2fb344;
+    --wd-info: #4299e1;
+    --wd-warning: #f76707;
+    --wd-danger: #d63939;
+    --wd-light: #f4f6fa;
+    --wd-dark: #232e3c;
+    --wd-font-sans-serif: "Inter",-apple-system,BlinkMacSystemFont,San Francisco,Segoe UI,Roboto,Helvetica Neue,sans-serif;
+    --wd-font-monospace: null,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    --wd-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+@tailwind components;
+
+@tailwind utilities;

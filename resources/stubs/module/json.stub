@@ -1,0 +1,16 @@
+{
+    "name": "$STUDLY_NAME$",
+    "alias": "$LOWER_NAME$",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "$MODULE_NAMESPACE$\\$STUDLY_NAME$\\$PROVIDER_NAMESPACE$\\$STUDLY_NAME$ServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "menus":[
+        {"sort": 50,"id": "$LOWER_NAME$", "parentid":"$LOWER_NAME$", "text": "$STUDLY_NAME$", "uri": "/$LOWER_NAME$"}
+    ]
+}
