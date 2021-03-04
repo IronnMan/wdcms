@@ -38,8 +38,18 @@ SAAS特点：
 
 [全部文档](http://wd.xbhub.com/docs/)
 
-#### 自研SASS模块供三方使用
+#### 模块/插件使用
 
+##### 官方插件
+```php
+
+// MODULE_NAME 是你想安装的模块名称,具体在房东后台插件管理处，大小写不限
+php artisan wd:install :MODULE_NAME:
+php artisan wd:remove :MODULE_NAME:
+
+```
+
+##### 自研SASS模块供三方使用
 wdcms支持自研模块，只需少许配置即可。
 > 使用之前请仔细学习下 [laravel-modules](https://github.com/nWidart/laravel-modules)
 

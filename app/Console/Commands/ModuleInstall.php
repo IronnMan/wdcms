@@ -21,7 +21,7 @@ class ModuleInstall extends Command
      *
      * @var string
      */
-    protected $name = 'wdcms:install';
+    protected $name = 'wd:install';
 
     /**
      * The console command description.
@@ -158,7 +158,7 @@ class ModuleInstall extends Command
         $content = json_decode(base64_decode($r->object()->content), true);
         foreach ($content['requires'] as $_require) {
             if(!Module::has(Str::studly($_require))) {
-                $this->call('wdcms:install', [
+                $this->call('wd:install', [
                     'name' => $_require
                 ]);
             }

@@ -19,7 +19,7 @@ class ModuleRemove extends Command
      *
      * @var string
      */
-    protected $name = 'wdcms:remove';
+    protected $name = 'wd:remove';
 
     /**
      * The console command description.
