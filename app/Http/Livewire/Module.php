@@ -86,6 +86,9 @@ class Module extends Component
      */
     public function updateStatus($name, $status)
     {
+        if(strtolower($name) == 'core') {
+            return false;
+        }
         $module = NModule::findOrFail($name);
         if($status === 0) {
             $module->disable();
