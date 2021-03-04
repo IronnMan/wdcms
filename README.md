@@ -29,12 +29,14 @@ SAAS特点：
 
 基础模块：
 
-* [核心模块](https://gitee.com/wdcms/core-module)：通过多渠道活码获取客户，条理有序分类
+* [核心模块](https://gitee.com/wdcms/core-module)：
 * [社交登录](https://gitee.com/wdcms/social-module)：微信/支付宝/抖音/QQ/淘宝/头条/豆瓣
 * [文件引擎](https://gitee.com/wdcms/file-module)：阿里OSS/腾讯COS/七牛一键切换
 * [定时任务](https://gitee.com/wdcms/task-module)：SAAS版本定时任务解决方案
 * [支付引擎](https://gitee.com/wdcms/payment-module)：支付聚合平台，支付宝/微信/银联/头条
 * [电商引擎](https://gitee.com/wdcms/shop-module)：完备的电商业务模型
+
+[全部文档](http://wd.xbhub.com/docs/)
 
 #### 自研SASS模块供三方使用
 
