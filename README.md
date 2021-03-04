@@ -13,6 +13,12 @@
 
 WDCMS是开源企业级SASS服务开发框架&引擎，wdcms保持着高效的开发体验及强大的稳定易用性，也保持的及其灵活的可扩展性。
 
+#### 在线体验
+
+http://wd.xbhub.com/
+账号：admin@qq.com
+密码：password
+
 #### 功能特性
 
 SAAS特点：
