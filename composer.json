@@ -9,7 +9,8 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0",
+        "php": ">=7.3",
+        "doctrine/dbal": "^2.9",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -27,14 +28,16 @@
         "xbhub/laravel-filter": "dev-master"
     },
     "require-dev": {
-        "laravel/tinker": "^2.5",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^0.0.5",
         "laravel/telescope": "^4.4",
-        "mockery/mockery": "^1.4.2",
+        "laravel/tinker": "^2.5",
+        "mockery/mockery": "^1.0",
         "nunomaduro/collision": "dev-stable",
-        "phpunit/phpunit": "^9.3.3",
+        "orchestra/database": "^6.0",
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0",
         "xbhub/laravel-xgee": "dev-master"
     },
     "config": {
@@ -77,8 +80,8 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ],
-        "install": [
-            "@php artisan wdcms:install core"
+        "post-install-cmd": [
+            "@php artisan wd:install core"
         ]
     }
 }
