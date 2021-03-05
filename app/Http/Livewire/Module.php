@@ -40,7 +40,7 @@ class Module extends Component
 
         if(!$gitModules) {
             $res = Http::get(config('wdcms.git.host'), [
-                'access_token' => config('wdcms.git.personal_access_tokens'),
+                'access_token' => 'f62b9257e4e2fec9ba368af267345253',
                 'type' => 'all', //all, public, private
                 'page' => '1',
                 'per_page' => '20'
