@@ -213,7 +213,7 @@ class ModuleInstaller
                 return "git@bitbucket.org:{$this->name}.git";
 
             case 'gitee':
-                return "git@gitee.com:{$this->name}.git";
+                return "https://gitee.com/{$this->name}.git";
 
             default:
 
