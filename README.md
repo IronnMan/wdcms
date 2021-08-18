@@ -65,7 +65,7 @@ Route::middleware('admin:shop')....
 ```
 ### 联系作者加入群
 
-![输入图片说明](http://cdn.xbhub.com/code.jpg)
+微信：jorycn
 
 ## License
 
